@@ -1,0 +1,70 @@
+.header-small {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 48px;
+  padding: 8px 32px;
+  background: RGB(76, 50, 220);
+}
+
+.menu-icon {
+  position: relative;
+  width: 32px;
+  height: 3px;
+  background: white;
+}
+
+.menu-icon::before {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  content: '';
+  width: inherit;
+  height: inherit;
+  background: inherit;
+}
+
+.menu-icon::after {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: '';
+  width: inherit;
+  height: inherit;
+  background: inherit;
+}
+
+/* .menu-icon:hover,
+.menu-icon:hover::before,
+.menu-icon:hover::before {
+  box-shadow: 0 0 10px gray;
+} */
+
+.menus-pop {
+  position: absolute;
+  top: 56px;
+  left: 32px;
+  width: calc(100% - 96px);
+  height: 6em;
+  right: 32px;
+  list-style: none;
+  padding: 8px 16px;
+
+  background: white;
+  box-shadow: 0 1px 2px gray;
+  text-align: left;
+  color: black;
+
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.menus-hidden {
+  padding: 0;
+  width: 0px;
+  height: 0px;
+}
+
+.menus-pop li {
+  line-height: 1.5em;
+}

@@ -1,0 +1,30 @@
+.button-wave {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  background: yellowgreen;
+  overflow: hidden;
+}
+
+.button-wave:focus {
+  outline: none;
+}
+
+.wave {
+  position: absolute;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.wave.show {
+  animation: ripple 0.75s ease-in-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

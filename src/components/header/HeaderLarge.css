@@ -1,0 +1,36 @@
+.header-large {
+  height: 48px;
+  padding: 8px 64px;
+  background: RGB(76, 50, 220);
+  color: white;
+}
+
+.header-large img {
+  float: left;
+  animation: App-logo-spin infinite 20s linear;
+  height: 48px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menus-large {
+  float: right;
+  margin: 0px;
+  color: 24px;
+}
+
+.menus-large li {
+  display: inline-block;
+  list-style: none;
+  line-height: 48px;
+  margin: 0 16px;
+
+  cursor: pointer;
+}
