@@ -1,38 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// let Drag = props => {
-//   let { style, children, x, y, ...other } = props
-//   return (
-//     <div
-//       style={{
-//         ...style,
-//         transform: `translate(${x}px, ${y}px)`
-//       }}
-//       // onMouseDown={this.dragStart}
-//       // onMouseUp={this.dragEnd}
-//       {...other}
-//     >
-//       {children}
-//     </div>
-//   )
-// }
-
-class Drag extends React.Component {
-  render() {
-    let { style, children, x, y, ...other } = this.props
-    return (
-      <div
-        style={{
-          ...style,
-          transform: `translate(${x}px, ${y}px)`
-        }}
-        {...other}
-      >
-        {children}
-      </div>
-    )
-  }
+let Drag = props => {
+  let { style, children, x, y, ...other } = props
+  return (
+    <div
+      style={{
+        ...style,
+        transform: `translate(${x}px, ${y}px)`
+      }}
+      // onMouseDown={this.dragStart}
+      // onMouseUp={this.dragEnd}
+      {...other}
+    >
+      {children}
+    </div>
+  )
 }
 
 function enhanceComponent(Component) {
